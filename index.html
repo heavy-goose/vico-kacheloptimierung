@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kacheloptimierung – Vorher & Nachher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Von unübersichtlich zu überzeugend – Beispiel einer konkreten UX-Verbesserung</h1>
+
+  <p>
+    Bei der Analyse einer Unterseite Ihrer Website, genauer gesagt der
+    <a href="https://vico-research.com/category/use-cases/" target="_blank">Use-Case-Übersicht</a>,
+    fiel mir auf, dass die Kachel-Darstellung visuell nicht ideal gelöst war: sehr schmal, teils schwer lesbar,
+    mit ungleichmäßigen Abständen.
+  </p>
+  <p>
+    Mit gezielten CSS-Anpassungen konnte ich das Layout modernisieren – ohne Eingriff in Inhalte,
+    aber mit spürbarem Effekt für die Nutzerfreundlichkeit.
+  </p>
+
+  <div class="video-grid">
+    <div class="video-block">
+      <video controls src="before.mp4"></video>
+      <div class="caption">Vorher</div>
+    </div>
+    <div class="video-block">
+      <video controls src="after.mp4"></video>
+      <div class="caption">Nachher</div>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <pre><code>
+      <span class="comment">/* Breitere Kacheln */</span>
+      <span class="selector">.tmb-iso</span> {
+        <span class="property">min-width</span>: <span class="value">280px</span>;
+      }
+
+      <span class="comment">/* Bessere Lesbarkeit der Titel */</span>
+      <span class="selector">.t-entry-title a</span> {
+        <span class="property">font-size</span>: <span class="value">1rem</span>;
+        <span class="property">line-height</span>: <span class="value">1.3</span>;
+        <span class="property">word-break</span>: <span class="value">break-word</span>;
+        <span class="property">hyphens</span>: <span class="value">auto</span>;
+        <span class="property">white-space</span>: <span class="value">normal</span>;
+      }
+    </code></pre>
+  </div>
+
+  <p style="max-width: 800px; margin: 2rem auto; text-align: left;">
+    Die gezeigten CSS-Anpassungen dienen der Verbesserung der visuellen Klarheit und Nutzerfreundlichkeit.
+    Die Kacheln wurden breiter gestaltet, um Zeilenumbrüche zu reduzieren und die Inhalte besser zur Geltung zu bringen.
+    Zusätzlich wurde die Typografie der Überschriften optimiert, um ein sauberes und lesbares Layout zu gewährleisten –
+    besonders bei längeren Titeln.
+  </p>
+
+  <footer>
+    <p>
+      Mehr zu meinen Projekten finden Sie auf meinem
+      <a href="https://github.com/heavy-goose" target="_blank">GitHub-Profil</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
